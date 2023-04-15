@@ -14,6 +14,7 @@ License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
 Group: System/Libraries
 BuildRequires: cmake
 BuildRequires: cmake(ECM)
+BuildRequires: qmake-qt6
 BuildRequires: python
 BuildRequires: cmake(Qt6Network)
 BuildRequires: cmake(Qt6Test)
