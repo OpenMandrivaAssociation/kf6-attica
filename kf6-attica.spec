@@ -2,12 +2,12 @@
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20230411
+%define git 20230415
 
 Name: kf6-attica
 Version: 5.240.0
 Release: %{?git:0.%{git}.}1
-Source0: https://invent.kde.org/frameworks/attica/-/archive/master/attica-master.tar.bz2
+Source0: https://invent.kde.org/frameworks/attica/-/archive/master/attica-master.tar.bz2#/attica-%{git}.tar.bz2
 Summary: Qt library that implements the Open Collaboration Services API
 URL: https://invent.kde.org/frameworks/attica
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
