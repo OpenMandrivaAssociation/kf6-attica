@@ -24,11 +24,12 @@ BuildRequires: cmake(XKB)
 BuildRequires: cmake(VulkanHeaders)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(Qt6DBusTools)
-BuildRequires: doxygen
 BuildRequires: cmake(Qt6CoreTools)
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Widgets)
+BuildRequires: qt6-qttools-doc
+BuildRequires: doxygen
 Requires: %{libname} = %{EVRD}
 
 %description
