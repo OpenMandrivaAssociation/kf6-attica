@@ -28,7 +28,8 @@ BuildRequires: cmake(Qt6CoreTools)
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Widgets)
-BuildRequires: qt6-qttools-doc
+# for QCH
+BuildRequires: qt6-qtbase-sql-sqlite
 BuildRequires: doxygen
 Requires: %{libname} = %{EVRD}
 
