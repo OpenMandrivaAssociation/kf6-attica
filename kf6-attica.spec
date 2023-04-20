@@ -2,7 +2,7 @@
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20230415
+%define git 20230420
 
 Name: kf6-attica
 Version: 5.240.0
@@ -25,6 +25,7 @@ BuildRequires: cmake(VulkanHeaders)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: doxygen
+BuildRequires: cmake(Qt6CoreTools)
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Widgets)
