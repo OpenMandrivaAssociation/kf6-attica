@@ -2,7 +2,7 @@
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20230513
+%define git 20230525
 
 Name: kf6-attica
 Version: 5.240.0
@@ -20,7 +20,6 @@ BuildRequires: cmake(Qt6Network)
 BuildRequires: cmake(Qt6Test)
 BuildRequires: cmake(Qt6WidgetsTools)
 BuildRequires: cmake(EGL)
-BuildRequires: cmake(XKB)
 BuildRequires: cmake(VulkanHeaders)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(Qt6DBusTools)
@@ -28,6 +27,7 @@ BuildRequires: cmake(Qt6CoreTools)
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Widgets)
+BuildRequires: pkgconfig(xkbcommon)
 # for QCH
 BuildRequires: qt6-qtbase-sql-sqlite
 BuildRequires: doxygen
