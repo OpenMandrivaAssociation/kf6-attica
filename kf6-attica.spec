@@ -2,7 +2,7 @@
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20230927
+%define git 20231004
 
 Name: kf6-attica
 Version: 5.240.0
@@ -75,7 +75,6 @@ Qt library that implements the Open Collaboration Services API
 %{_includedir}/KF6/Attica
 %{_libdir}/cmake/KF6Attica
 %{_libdir}/pkgconfig/KF6Attica.pc
-%{_libdir}/qt6/mkspecs/modules/qt_Attica.pri
 %{_libdir}/qt6/doc/KF6Attica.*
 
 %files -n %{libname}
