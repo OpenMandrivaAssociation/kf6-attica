@@ -2,7 +2,7 @@
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20231022
+%define git 20231103
 
 Name: kf6-attica
 Version: 5.240.0
