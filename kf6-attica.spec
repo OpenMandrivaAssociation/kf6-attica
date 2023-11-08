@@ -1,13 +1,20 @@
-%undefine _debugsource_package
+#undefine _debugsource_package
+
+%define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
+%define major %(echo %{version} |cut -d. -f1-3)
 
 %define libname %mklibname KF6Attica
 %define devname %mklibname KF6Attica -d
-%define git 20231103
+#define git 20231103
 
 Name: kf6-attica
-Version: 5.240.0
+Version: 5.245.0
 Release: %{?git:0.%{git}.}1
+%if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/attica/-/archive/master/attica-master.tar.bz2#/attica-%{git}.tar.bz2
+%else
+Source0: http://download.kde.org/%{stable}/frameworks/%{major}/attica-%{version}.tar.xz
+%endif
 Summary: Qt library that implements the Open Collaboration Services API
 URL: https://invent.kde.org/frameworks/attica
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
