@@ -8,7 +8,7 @@
 #define git 20240217
 
 Name: kf6-attica
-Version: 6.9.0
+Version: 6.10.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/attica/-/archive/master/attica-master.tar.bz2#/attica-%{git}.tar.bz2
